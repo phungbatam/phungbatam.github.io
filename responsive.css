@@ -1,0 +1,614 @@
+/* @Media min-width: 480px */
+
+@media only screen and (min-width: 200px) and (max-width: 860px) {
+    /* General Elements */
+    #title-text-separator {
+        width: 15%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        border: solid 1px #ff5a6e;
+    }
+    /* Navigation CSS */
+    #header {
+        background: white;
+        position: fixed;
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        min-height: 80px;
+        margin: auto;
+    }
+    #normal-header {
+        display: none;
+    }
+    #responsive-header {
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        margin: auto;
+    }
+    #responsive-logo-button {
+        display: flex;
+        justify-content: space-between;
+        padding: 1% 0 1% 0;
+    }
+    #responsive-nav-bar {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    #responsive-nav-bar ul {
+        list-style: none;
+    }
+    #responsive-nav-bar li {
+        text-align: center;
+        font-size: 23px;
+        margin-top: 40%;
+    }
+    #responsive-first-item {
+        margin-top: 0;
+        padding: 0;
+    }
+    #header-img-black {
+        margin-left: 5%;
+        margin-top: 3%;
+        height: auto;
+    }
+    #dropdown-button-black {
+        display: block;
+        width: 55%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+    #image-button-black {
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: inherit;
+        padding: 2%;
+    }
+    #home {
+        width: 100%;
+        height: 120vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+        color: white;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://recmiennam.com/wp-content/uploads/2020/10/tai-hinh-nen-phong-canh-tuyet-dep-cho-may-tinh-3.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    #hero-title {
+        font-size: 3.5em;
+    }
+    #hero-text {
+        font-size: 1.3em;
+        margin-top: 2%;
+    }
+    #hero-button {
+        border: solid 2px white;
+        background-color: inherit;
+        color: white;
+        margin-top: 6%;
+        width: 50%;
+        height: 43px;
+        font-size: 15px;
+        border-radius: 10px;
+    }
+    #hero-button:hover {
+        cursor: pointer;
+    }
+    /* Service Features CSS */
+    #service-features {
+        display: flex;
+        flex-direction: column;
+        /* Change flow-direction to "column" in the responsive design for the features to stack
+      one on top of another. */
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 2%;
+    }
+    #features-description {
+        width: 90%;
+    }
+    #feature {
+        width: 80%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: solid 1px #bebebe;
+        box-shadow: 1px 2px 15px #bebebe;
+        margin-top: 10%;
+    }
+    #feature-button {
+        border: none;
+        margin-top: 30%;
+        width: 25vh;
+        height: 8vh;
+        border-radius: 15px;
+        background-color: #ff5a6e;
+        color: white;
+        font-size: 16px;
+        margin-bottom: 20%;
+    }
+    /* Presentation Section CSS */
+    #presentation-container {
+        margin-top: 5%;
+    }
+    #presentation-title-description {
+        width: 90%;
+    }
+    #section-buttons {
+        margin-top: 5%;
+    }
+    #section-content-container {
+        margin: auto;
+        width: 90%;
+    }
+    #section-content-container {
+        margin-top: 7%;
+    }
+    .product-button {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 40%;
+        padding: 15px;
+    }
+    .product-content {
+        display: flex;
+        flex-flow: column;
+        padding: 2%;
+    }
+    #content-image {
+        width: 100%;
+        height: 100%;
+    }
+    #content-image-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    #content-title-text {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        margin: auto;
+        margin-top: 5%;
+    }
+    #content-title-text h1 {
+        margin: auto;
+    }
+    #centered-product-description {
+        text-align: center;
+    }
+    #content-title-text p {
+        margin-top: 5%;
+    }
+    #product-feature-image {
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+    }
+    .product-features-list {
+        margin-top: 15%;
+    }
+    #first-feature-list {
+        margin-top: 10%;
+    }
+    #content-button {
+        margin: auto;
+        margin-top: 10%;
+        width: 100%;
+    }
+    /* -- Media Section CSS -- */
+    #main-media-container {
+        margin-top: 5%;
+    }
+    #media-title-description {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 90%;
+        margin-top: 8%;
+    }
+    #media-video-text-container {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        padding: 2% 1% 2% 1%;
+        margin-top: 10%;
+        text-align: center;
+    }
+    #media-text {
+        width: 100%;
+    }
+    #media-text h2 {
+        margin: auto;
+    }
+    #media-text p {
+        margin-top: 6%;
+    }
+    #text-video-sperator {
+        height: 1%;
+        width: 80%;
+        margin-top: 10%;
+        margin-bottom: 9%;
+    }
+    #media-button {
+        width: 30%;
+        margin: auto;
+        margin-top: 7%;
+    }
+    #media-video {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+    }
+    #iframe-video {
+        width: 50vh;
+        height: 30vh;
+        margin-bottom: 8%;
+    }
+    /* -- Prices Section CSS -- */
+    #prices-section-container {
+        margin-top: 15%;
+    }
+    #prices-title-description {
+        width: 90%;
+    }
+    #all-prices-container {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    /* Email Section CSS */
+    #newsletter-container {
+        margin-top: 10%;
+    }
+    #newsletter-title-description {
+        width: 90%;
+    }
+    #email-form label {
+        width: 90%;
+        text-align: center;
+    }
+    #email {
+        width: 80%;
+    }
+    /* Footer Section */
+    footer {
+        margin-top: 10%;
+    }
+}
+
+@media only screen and (min-width: 860px) and (max-width: 1280px) {
+    /* Navigation CSS */
+    #header {
+        background: white;
+        position: fixed;
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        min-height: 80px;
+        margin: auto;
+    }
+    #normal-header {
+        display: none;
+    }
+    #responsive-header {
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        margin: auto;
+    }
+    #responsive-logo-button {
+        display: flex;
+        justify-content: space-between;
+        padding: 1% 0 1% 0;
+    }
+    #responsive-nav-bar {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    #responsive-nav-bar ul {
+        list-style: none;
+    }
+    #responsive-nav-bar li {
+        text-align: center;
+        font-size: 23px;
+        margin-top: 40%;
+    }
+    #responsive-first-item {
+        margin-top: 0;
+        padding: 0;
+    }
+    #header-img-black {
+        margin-left: 5%;
+        margin-top: 3%;
+        width: 50%;
+        height: auto;
+    }
+    #dropdown-button-black {
+        display: block;
+        width: 55%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+    #image-button-black {
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: inherit;
+        padding: 2%;
+    }
+    /* Hero CSS */
+    #home {
+        width: auto;
+        height: 120vh;
+        /* hero-header flexbox */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        /* Texy style */
+        text-align: center;
+        color: white;
+        /* Background image */
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://recmiennam.com/wp-content/uploads/2020/10/tai-hinh-nen-phong-canh-tuyet-dep-cho-may-tinh-3.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    #hero-title {
+        font-size: 3.5em;
+    }
+    #hero-text {
+        font-size: 1.3em;
+        margin-top: 2%;
+    }
+    #hero-button {
+        border: solid 2px white;
+        background-color: inherit;
+        color: white;
+        margin-top: 6%;
+        width: 25%;
+        height: 55px;
+        font-size: 15px;
+        border-radius: 10px;
+    }
+    #hero-button:hover {
+        cursor: pointer;
+    }
+    /* Service Features CSS */
+    #service-features {
+        display: flex;
+        flex-flow: row;
+        /* Change flow-direction to "column" in the responsive design for the features to stack
+      one on top of another. */
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 2%;
+    }
+    #features-description {
+        width: 90%;
+    }
+    #feature {
+        width: 30%;
+        text-align: center;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        border: solid 1px #bebebe;
+        box-shadow: 1px 2px 15px #bebebe;
+        margin-top: 10%;
+    }
+    #feature-button {
+        border: none;
+        margin-top: 30%;
+        width: 15vh;
+        height: 5vh;
+        border-radius: 15px;
+        background-color: #ff5a6e;
+        color: white;
+        font-size: 16px;
+        margin-bottom: 20%;
+    }
+    /* Presentation Section CSS */
+    #presentation-container {
+        margin-top: 5%;
+        width: 80%;
+        margin: auto;
+    }
+    #presentation-title-description {
+        width: 90%;
+    }
+    #section-buttons {
+        margin-top: 5%;
+    }
+    #section-content-container {
+        margin: auto;
+        width: 90%;
+    }
+    #section-content-container {
+        margin-top: 7%;
+    }
+    .product-button {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 40%;
+        padding: 15px;
+    }
+    .product-content {
+        display: flex;
+        flex-flow: column;
+        padding: 2%;
+    }
+    #content-image {
+        width: 100%;
+        height: 100%;
+    }
+    #content-image-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    #content-title-text {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        margin: auto;
+        margin-top: 5%;
+    }
+    #content-title-text h1 {
+        margin: auto;
+    }
+    #centered-product-description {
+        text-align: center;
+    }
+    #content-title-text p {
+        margin-top: 5%;
+    }
+    #product-feature-image {
+        justify-content: center;
+        align-items: center;
+        width: 8%;
+    }
+    .product-features-list {
+        margin-top: 15%;
+    }
+    #first-feature-list {
+        margin-top: 10%;
+    }
+    #content-button {
+        margin: auto;
+        margin-top: 10%;
+        width: 35%;
+    }
+    /* -- Media Section CSS -- */
+    #main-media-container {
+        margin-top: 5%;
+    }
+    #media-title-description {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 90%;
+        margin-top: 8%;
+    }
+    #media-video-text-container {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        padding: 2% 1% 2% 1%;
+        margin-top: 10%;
+        text-align: center;
+    }
+    #media-text {
+        width: 100%;
+    }
+    #media-text h2 {
+        margin: auto;
+    }
+    #media-text p {
+        margin-top: 6%;
+    }
+    #text-video-sperator {
+        height: 1%;
+        width: 80%;
+        margin-top: 10%;
+        margin-bottom: 9%;
+    }
+    #media-button {
+        width: 35%;
+        margin: auto;
+        margin-top: 7%;
+    }
+    #media-video {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+    }
+    #iframe-video {
+        width: 80vh;
+        height: 50vh;
+        margin-bottom: 9%;
+    }
+    /* -- Prices Section CSS -- */
+    #prices-section-container {
+        margin-top: 15%;
+    }
+    #prices-title-description {
+        width: 90%;
+    }
+    #all-prices-container {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .price-container {
+        width: 50%;
+        margin-top: 15%;
+    }
+    #price-container-two {
+        margin-top: 15%;
+    }
+    .price-container button {
+        width: 35%;
+    }
+    /* Email Section CSS */
+    #newsletter-container {
+        margin-top: 10%;
+    }
+    #newsletter-title-description {
+        width: 90%;
+    }
+    #email-form label {
+        width: 90%;
+        text-align: center;
+    }
+    #email {
+        width: 80%;
+    }
+}

@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href='https://dl.dropboxusercontent.com/s/dcgtnlepsegtqxk/style.css' rel='stylesheet' />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://assets.website-files.com/6023c1ab453b66ef8af02699/6023c32ae978ee363726ea57_fav32.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="https://assets.website-files.com/6023c1ab453b66ef8af02699/6023c32c74616d61490c3211_fav256.png" rel="apple-touch-icon" />
+    <link rel="stylesheet" type="text/css" href="CSS/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/stylesheet.css" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="CSS/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anserikit | Super code</title>
+</head>
+
+<body>
+    <header id="header">
+
+        <div id="normal-header">
+            <a href="#" id="image-link"><img title="Super-code" src="https://assets.website-files.com/6023c1ab453b66ef8af02699/6023f1fd35e4792c41d0c84a_logo.svg" alt="Reverse Logo" id="header-img" /></a>
+
+            <nav id="nav-bar">
+                <ul>
+                    <li class="nav-link" id="menu-item">
+                        <a href="#home" class="menu-link"> <i class="fa fas-home" title="Trang chủ">Home</i> </a>
+                    </li>
+                    <li class="nav-link" id="menu-item"><a href="#features-container" class="menu-link"> Features </a></li>
+                    <li class="nav-link" id="menu-item"><a href="#presentation-container" class="menu-link"> Products </a></li>
+                    <li class="nav-link" id="menu-item"><a href="#main-media-container" class="menu-link">Blog </a></li>
+                    <li class="nav-link" id="menu-item"><a href="#prices-section-container" class="menu-link">Video</a>
+                        <div class="nav">
+                            <div class="search-container">
+                                <div class="search-inputs">
+                                    <label for="search" class="sr-only">Search website</label>
+                                    <input title="Tìm kiếm" type="search" style="color: rgb(7, 226, 124);" class="search" id="search" value="" name="gender" onchange="ouvrirPage()" placeholder="Search...">
+                                    <button class="submitBtn" type="submit" onclick="Super()">
+                                        <svg width="22" height="22" viewBox="0 0 22 22"><path d="m132.77 118.03l-27.945-27.945c6.735-9.722 10.1-20.559 10.1-32.508 0-7.767-1.508-15.195-4.523-22.283-3.01-7.089-7.088-13.199-12.221-18.332-5.133-5.133-11.242-9.207-18.33-12.221-7.09-3.01-14.518-4.522-22.285-4.522-7.767 0-15.195 1.507-22.283 4.522-7.089 3.01-13.199 7.088-18.332 12.221-5.133 5.133-9.207 11.244-12.221 18.332-3.01 7.089-4.522 14.516-4.522 22.283 0 7.767 1.507 15.193 4.522 22.283 3.01 7.088 7.088 13.197 12.221 18.33 5.133 5.134 11.244 9.207 18.332 12.222 7.089 3.02 14.516 4.522 22.283 4.522 11.951 0 22.787-3.369 32.509-10.1l27.945 27.863c1.955 2.064 4.397 3.096 7.332 3.096 2.824 0 5.27-1.032 7.332-3.096 2.064-2.063 3.096-4.508 3.096-7.332.0001-2.877-1-5.322-3.01-7.331m-49.41-34.668c-7.143 7.143-15.738 10.714-25.787 10.714-10.05 0-18.643-3.572-25.786-10.714-7.143-7.143-10.714-15.737-10.714-25.786 0-10.05 3.572-18.644 10.714-25.786 7.142-7.143 15.738-10.714 25.786-10.714 10.05 0 18.643 3.572 25.787 10.714 7.143 7.142 10.715 15.738 10.715 25.786 0 10.05-3.573 18.643-10.715 25.786" transform="matrix(.11417.00745-.00745.11417 3.93 2.548)" fill="currentColor"/></svg>
+                                        <span class="sr-only">Search</span>
+                                    </button>
+                                    <button class="closeBtn" type="button" aria-hidden="true" title="Đóng">╳</button>
+                                </div>
+                                <!-- .search-inputs -->
+                                <!-- <div class="search-results" aria-hidden="true"><h3 style="text-align: center;" class="Super-hei">Từ gợi ý cho web</h3><br><ul><li style="text-align: center;">Đọc báo mới</li><li>Game</li><li></li><li></li></ul><br><ul><li></li><li></li><li></li><li></li></ul> <br> <ul>   <li></li> <li></li><li></li> <li></li><li></li></ul></div> -->
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <style>
+            .sidenav {
+                height: 100%;
+                width: 0;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: #111;
+                overflow-x: hidden;
+                transition: 0.5s;
+                padding-top: 60px;
+            }
+            
+            .sidenav a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+                transition: 0.3s;
+            }
+            
+            .sidenav a:hover {
+                color: #f1f1f1;
+            }
+            
+            .sidenav .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+            }
+            
+            #main {
+                transition: margin-left .5s;
+                padding: 16px;
+            }
+            
+            @media screen and (max-height: 450px) {
+                .sidenav {
+                    padding-top: 15px;
+                }
+                .sidenav a {
+                    font-size: 18px;
+                }
+            }
+        </style>
+
+        <div id="responsive-header">
+            <div id="responsive-logo-button">
+                <a href="#" id="image-link"><img src="https://assets.website-files.com/6023c1ab453b66ef8af02699/6023f1fd35e4792c41d0c84a_logo.svg" alt="Reverse Logo" id="header-img-black" /></a>
+                <button id="image-button-black"><img src="https://i.ibb.co/kMTskLL/84.jpg" alt="Dropdown Menu" id="dropdown-button-black" /></button>
+            </div>
+            <div id="responsive-nav-bar">
+                <div class="topnav">
+                    <input type="text" onchange="Super()" id="search" placeholder="Search..">
+                </div>
+                <ul>
+                    <li class="nav-link" id="responsive-home-item"><a href="#home" class="responsive-menu-link">Home</a></li>
+                    <li class="nav-link" id="responsive-features-item"><a href="#features-container" class="responsive-menu-link"> Features </a></li>
+                    <li class="nav-link" id="responsive-products-item"><a href="#presentation-container" class="responsive-menu-link"> Products </a></li>
+                    <li class="nav-link" id="responsive-media-item"><a href="#main-media-container" class="responsive-menu-link">Blog</a></li>
+                    <li class="nav-link" id="responsive-pricing-item"><a href="#prices-section-container" class="responsive-menu-link">Video</a>
+                        <li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <div id="home">
+        <div id="hero-content">
+            <h1 id="hero-title"><i class="fa fa-check" style="font-size: 5vw;">CHÀO MỪNG MỌI NGƯỜI ĐÃ ĐẾN VỚI TRANG WEB CỦA MÌNH </i> </h1>
+
+            <p id="hero-text" style="font-size: 1.7vw;">Let's explore our website together ^^</p>
+
+            <a href="#features-container"><button title="Bắt đầu đi khám phá trang web" class="body-hard" id="hero-button"></button></a>
+        </div>
+
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="https://phungbatam.github.io/wikipedia-tim-kiem-khoa-hoc-thu-vien-lap-trinh/">Wikipedia</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+    <span title="Menu - Responsive" style="font-size:30px;cursor:pointer; color: rgb(0, 0, 0); margin: 10px;" onclick="openNav()">&#9776;</span>
+    <div id="main">
+        <div id="features-container">
+            <div id="features-description">
+                <h1> Những khóa học và <span id="red-text">Những bài học hữu ích </span> </h1>
+
+                <hr id="title-text-separator" />
+
+                <p id="ADS-htv"></p>
+            </div>
+            <script>
+                document.getElementById("ADS-htv").innerHTML = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.';
+            </script>
+            <div id="service-features">
+
+                <div id="feature">
+                    <img src="https://www.w3schools.com/favicon.ico" alt="Khóa học trên w3schools" id="heart-icon" />
+                    <h2 id="feature-title">W3schools</h2>
+                    <br>
+                    <p id="w3-shools" style="font-size: 16px;">w3schools là một trang web giúp các bạn, học những khóa học lập trình miễn phí<br>Từ cơ bản đến nâng cao <br><br>VD:HTML/CSS/JS, PHP, HOW TO,..V.V </p>
+                    <br><br>
+                    <a href="https://www.w3schools.com/" target="_blank"><button title="Bắt đầu học! " id="feature-button">Learn</button></a>
+                </div>
+
+                <div id="feature">
+                    <img src="https://i.ibb.co/LY0pq5X/web-programming.png" alt="Code Icon" id="code-icon" />
+
+                    <h2 id="feature-title">code </h2>
+
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+
+                    <a href="#"><button id="feature-button"> See more! </button></a>
+                </div>
+
+                <div id="feature">
+                    <img src="https://i.ibb.co/vHjwX9N/smartphone-with-shield.png" alt="Shield on Phone Icon" id="phone-icon" />
+
+                    <h2 id="feature-title"> Short Title </h2>
+
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+
+                    <a href="#"><button id="feature-button"> See more! </button></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="presentation-container">
+
+            <div id="presentation-title-description">
+                <h1> Here is how <span id="red-text">we do it</span> </h1>
+
+                <hr id="title-text-separator" />
+
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+
+            <div id="section-buttons">
+
+                <button class="product-button" id="first-product-button"> khóa học IT </button>
+
+                <button class="product-button" id="second-product-button"> Product 2 </button>
+
+                <button class="product-button" id="third-product-button"> Product 3 </button>
+
+                <button class="product-button" id="fourth-product-button"> Product 4 </button>
+
+            </div>
+            <div id="section-content-container">
+                <div id="product-container-one" class="product-content">
+
+                    <div id="content-image-container">
+                        <img src="https://static.fullstack.edu.vn/static/media/f8-og-image.7bfad51d2684a4d093a4.jpg" id="content-image" class="image1" />
+                    </div>
+
+                    <div id="content-title-text">
+                        <h1 style="font-size: 25px;"><strong> Bạn sẽ học được những thứ gì tại F8</strong></h1>
+
+                        <p id="centered-product-description" style="font-size: 12.7px;">
+                            Trong khóa học tại F8 này các bạn sẽ học được những thứ quang trọng như sau. Nếu trong khóa học các bạn không hiểu chỗ nào cũng có thể chat với những người học trước hình (Thuộc kiểu trao đổi cho nhau).
+                            <br /><br />
+                        </p>
+
+                        <div class="product-features-list" id="first-feature-list">
+
+                            <div id="product-feature-image">
+                                <i class="fa fa-check" id="correct-icon"></i>
+                            </div>
+
+                            <div id="inside-features-title-text">
+                                <h2> This is test title </h2>
+
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor, incidintum ut labore et dolor magna aliqua. </p>
+                            </div>
+
+                        </div>
+
+                        <div class="product-features-list">
+
+                            <div id="product-feature-image">
+                                <i class="fa fa-check" id="correct-icon"></i>
+                            </div>
+
+                            <div id="inside-features-title-text">
+                                <h2> This is test title </h2>
+
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor, incidintum ut labore et dolor magna aliqua. </p>
+                            </div>
+
+                        </div>
+
+                        <div class="product-features-list">
+
+                            <div id="product-feature-image">
+                                <i class="fa fa-check" id="correct-icon"></i>
+                            </div>
+
+                            <div id="inside-features-title-text">
+                                <h2> This is test title </h2>
+
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor, incidintum ut labore et dolor magna aliqua. </p>
+                            </div>
+
+                        </div>
+
+                        <div class="product-features-list">
+
+                            <div id="product-feature-image">
+                                <i class="fa fa-check" id="correct-icon"></i>
+                            </div>
+
+                            <div id="inside-features-title-text">
+                                <h2> This is test title </h2>
+
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor, incidintum ut labore et dolor magna aliqua. </p>
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <a target="_blank" href="https://fullstack.edu.vn"><button onclick="hack()" title="khóa học f8" id="content-button">start learning</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Container 2 -->
+                <div id="product-container-two" class="product-content">
+                    <div id="content-image-container">
+                        <img src="https://i.ibb.co/rp92fYB/blur-business-close-up-1029757.jpg" id="content-image" class="image2" />
+                    </div>
+
+                    <div id="content-title-text">
+                        <h1> Product Nr.2 Title </h1>
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptate velit esse cillum dolore eu.
+                            <br /><br />
+                        </p>
+
+                        <div class="product-features-list">
+
+                            <div id="product-feature-image">
+                                <img src="https://i.ibb.co/LzczvS3/correct.png" alt="check-sign" id="correct-icon" />
+                            </div>
+
+                            <div id="inside-features-title-text">
+                                <h2> This is test title </h2>
+
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor, incidintum ut labore et dolor magna aliqua. </p>
+                            </div>
+
+                        </div>
+
+                        <div class="product-features-list">
+
+                            <div id="product-feature-image">
+                                <img src="https://i.ibb.co/LzczvS3/correct.png" alt="check-sign" id="correct-icon" />
+                            </div>
+
+                            <div id="inside-features-title-text">
+                                <h2> This is test title </h2>
+
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor, incidintum ut labore et dolor magna aliqua. </p>
+                            </div>
+
+                        </div>
+
+                        <div class="product-features-list">
+
+                            <div id="product-feature-image">
+                                <img src="https://i.ibb.co/LzczvS3/correct.png" alt="check-sign" id="correct-icon" />
+                            </div>
+
+                            <div id="inside-features-title-text">
+                                <h2> This is test title </h2>
+
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor, incidintum ut labore et dolor magna aliqua. </p>
+                            </div>
+
+                        </div>
+
+                        <div class="product-features-list">
+
+                            <div id="product-feature-image">
+                                <img src="https://i.ibb.co/LzczvS3/correct.png" alt="check-sign" id="correct-icon" />
+                            </div>
+
+                            <div id="inside-features-title-text">
+                                <h2> This is test title </h2>
+
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor, incidintum ut labore et dolor magna aliqua. </p>
+                            </div>
+
+                        </div>
+
+                        <button id="content-button"> Read More </button>
+                    </div>
+                </div>
+
+                <!-- Content Container 3 -->
+                <div id="product-container-three" class="product-content">
+                    <div id="content-image-container">
+                        <img src="https://i.ibb.co/Yj4fGBN/adult-apple-device-business-839465.jpg" id="content-image" class="image3" />
+                    </div>
+
+                    <div id="content-title-text">
+                        <h1> Product Nr.3 Title </h1>
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptate velit esse cillum dolore eu.
+                            <br /><br />
+                        </p>
+
+                        <div class="product-features-list">
+
+                            <div id="product-feature-image">
+                                <img src="https://i.ibb.co/LzczvS3/correct.png" alt="check-sign" id="correct-icon" />
+                            </div>
+
+                            <div id="inside-features-title-text">
+                                <h2> This is test title </h2>
+
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor, incidintum ut labore et dolor magna aliqua. </p>
+                            </div>
+
+                        </div>
+
+                        <div class="product-features-list">
+
+                            <div id="product-feature-image">
+                                <img src="https://i.ibb.co/LzczvS3/correct.png" alt="check-sign" id="correct-icon" />
+                            </div>
+
+                            <div id="inside-features-title-text">
+                                <h2> This is test title </h2>
+
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor, incidintum ut labore et dolor magna aliqua. </p>
+                            </div>
+
+                        </div>
+
+                        <div class="product-features-list">
+
+                            <div id="product-feature-image">
+                                <img src="https://i.ibb.co/LzczvS3/correct.png" alt="check-sign" id="correct-icon" />
+                            </div>
+
+                            <div id="inside-features-title-text">
+                                <h2> This is test title </h2>
+
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor, incidintum ut labore et dolor magna aliqua. </p>
+                            </div>
+
+                        </div>
+
+                        <div class="product-features-list">
+
+                            <div id="product-feature-image">
+                                <img src="https://i.ibb.co/LzczvS3/correct.png" alt="check-sign" id="correct-icon" />
+                            </div>
+
+                            <div id="inside-features-title-text">
+                                <h2> This is test title </h2>
+
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor, incidintum ut labore et dolor magna aliqua. </p>
+                            </div>
+
+                        </div>
+
+                        <button id="content-button"> Read More </button>
+                    </div>
+                </div>
+                <!-- Content Container 4 -->
+                <div id="product-container-four" class="product-content">
+                    <div id="content-image-container">
+                        <img src="https://i.ibb.co/t3Lnfm6/arrows-blur-close-up-163130.jpg" id="content-image" class="image2" />
+                    </div>
+
+                    <div id="content-title-text">
+                        <h1> Product Nr.4 Title </h1>
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptate velit esse cillum dolore eu.
+                            <br /><br />
+                        </p>
+
+                        <div class="product-features-list">
+
+                            <div id="product-feature-image">
+                                <img src="https://i.ibb.co/LzczvS3/correct.png" alt="check-sign" id="correct-icon" />
+                            </div>
+
+                            <div id="inside-features-title-text">
+                                <h2> This is test title </h2>
+
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor, incidintum ut labore et dolor magna aliqua. </p>
+                            </div>
+
+                        </div>
+
+                        <div class="product-features-list">
+
+                            <div id="product-feature-image">
+                                <img src="https://i.ibb.co/LzczvS3/correct.png" alt="check-sign" id="correct-icon" />
+                            </div>
+
+                            <div id="inside-features-title-text">
+                                <h2> This is test title </h2>
+
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor, incidintum ut labore et dolor magna aliqua. </p>
+                            </div>
+
+                        </div>
+
+                        <div class="product-features-list">
+
+                            <div id="product-feature-image">
+                                <img src="https://i.ibb.co/LzczvS3/correct.png" alt="check-sign" id="correct-icon" />
+                            </div>
+
+                            <div id="inside-features-title-text">
+                                <h2> This is test title </h2>
+
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor, incidintum ut labore et dolor magna aliqua. </p>
+                            </div>
+
+                        </div>
+
+                        <div class="product-features-list">
+
+                            <div id="product-feature-image">
+                                <img src="https://i.ibb.co/LzczvS3/correct.png" alt="check-sign" id="correct-icon" />
+                            </div>
+
+                            <div id="inside-features-title-text">
+                                <h2> This is test title </h2>
+
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor, incidintum ut labore et dolor magna aliqua. </p>
+                            </div>
+
+                        </div>
+
+                        <button id="content-button"> Read More </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Media - Video Section -->
+
+        <div id="main-media-container">
+
+            <div id="media-title-description">
+                <h1> Media Section </h1>
+
+                <hr id="title-text-separator">
+
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+
+            <div id="media-video-text-container">
+                <div id="media-text">
+                    <h2> 300 bài code thiếu nhi </h2>
+
+                    <p>
+
+                        In IT men have long been transmitted an anecdote on the book of life changes with the name "300 children's code". Accordingly, many different class people have been successful, thousands of dollars thanks to accidentally picking up and studying according
+                        to the code in this book.
+                        <br /><br />
+                        <h4>Những câu chuyện đổi đời nhờ cuốn sách "300 bài code thiếu nhi"</h4>
+                        <br /><br /> 1.Bà hàng xóm nhà mình đây, trước đi buôn đồng nát, tình cờ có thằng sinh viên khoa CNTT nó bán đống sách cũ. Thế nào mà bà ấy mua "300 bài code thiếu nhi" cầm về đọc.Rồi sáng đi mua đồng nát, tối về đọc sách, cuối
+                        tuần ra quán net thực hành. Sáu tháng sau bà ấy khăn gói lên Hà Nội đi phỏng vấn, cũng nhờ code trên giấy nhiều mà mấy bài "white board" bà ấy làm ngon ơ. Cũng 5 năm rồi, giờ đang làm lead ở một công ty khá lớn.Đúng là cái nghề
+                        này mang lại cơ hội đổi đời cho nhiều người.
+                        <br /><br />2. Quê tôi miền biển, có gia đình cạnh nhà làm nghề chài lưới. Bữa đi kéo lưới, anh chồng thấy nặng nặng tưởng được mẻ cá to, ai ngờ toàn sách là sách. Nào là "300 bài code thiếu nhi", "Lập trình căn bản", "Machine
+                        Learning", "Deep learning", "AI"... Anh định vứt đi nhưng nhà mấy đời không biết mặt chữ là gì nên quyết tâm cầm về gối đầu giường. Đi học bổ túc văn hóa ban đêm phổ cập con chữ. Ấy thế mà bẵng đi 6 tháng tôi từ thủ đô về thăm
+                        anh khoe giờ ở nhà làm freelancer cho công ty gì ở Mỹ ấy, to lắm, lương xấp xỉ 1 củ Trump/năm.
+                    </p>
+                    <br><br>
+                    <figcaption style="overflow: hidden;">
+                        <b>Nội dung được lấy từ website của </b><a target="_blank" href="https://quantrimang.com/cuon-sach-300-bai-code-thieu-nhi-va-nhung-mau-chuyen-vui-cua-anh-em-coder-176589">Quảng trị mạng</a>
+                    </figcaption>
+                    <button type="button" id="media-button"> Read More </button>
+                </div>
+
+
+                <hr id="text-video-sperator" />
+
+                <div id="media-video">
+                    <h5>video review về cuốn sách "thần thánh" của anh sơn</h5>
+
+                    <iframe width="300" height="218" src="https://www.youtube.com/embed/sgq7BH6WxL8?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Prices Section -->
+        <div id="prices-section-container">
+            <div id="prices-title-description">
+                <h1> Prices title </h1>
+
+                <hr id="title-text-separator" />
+
+                <p>
+                    Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor magna aliqua. Ut enim ad minim veniam, quis mostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+
+            <div id="all-prices-container">
+
+                <div id="price-container-one" class="price-container">
+
+                    <h1 style="font-size: 25px; text-align: center;">Play video </h1>
+                    <h5 style="font-size: 14px; text-align: center;">Bản quyền thuộc Super code </h5>
+                    <hr/>
+                    <iframe width="400" class="w3znm" height="300px" src="https://www.youtube.com/embed/pAeMntJ-Id4?start=31" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+
+                <div id="price-container-two" class="price-container">
+
+                    <h1 style="font-size: 25px; text-align: center;">Visual studio code </h1>
+                    <h5 style="font-size: 14px; text-align: center;">Bản quyền thuộc Super code </h5>
+                    <hr>
+                    <video poster="https://i.ytimg.com/vi/rZ0A4E3XBYs/0.jpg" width="400px" class="w3znm" controls>
+                        <source src="super.mp4">
+                          </video>
+                    <h4 style="text-align: center; font-size: 23px;">cách dowloand và sửa lỗi
+                        <p class="super-activi"> studio code mới nhất</p>
+
+                    </h4>
+                    <p style="text-align: center;">nếu thấy video mờ thì vào link này <a href="https://youtu.be/rZ0A4E3XBYs"><u>Tại đây</u></a></p>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+        <!-- Newsletter Section -->
+        <div id="newsletter-container">
+            <div id="newsletter-title-description">
+                <h1> Join our Newsletter! </h1>
+
+                <hr id="title-text-separator" />
+
+            </div>
+
+            <div id="email-input-container">
+                <form id="email-form" target="_blank" action="https://webhoctap1.github.io/super-code/">
+                    <label> Join our Newsletter and don't miss future deals! </label>
+                    <input type="email" class="background" placeholder="Enter your e-mail" id="email" />
+                    <button id="submit" type="submit" class="super-contai">Button </button>
+                </form>
+            </div>
+        </div>
+
+
+        <!-- JavaScript/jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="jquery.js"></script>
+
+
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+
+    <footer>
+
+        <p>
+            Trang web được thực hiện bởi Super code
+            <fb:login-button show-faces="true" width="200" max-rows="1"></fb:login-button>
+            <a href="https://www.youtube.com/channel/UCTUvUz-NUXdjhl2qRSpbmWA">
+                <i title="Kênh của tôi" class="icon-YOUTUBE"></i>
+            </a>
+            <a href="https://twitter.com/dmt2008">
+                <i title="twitter của tôi" style="color: #557cff;" class="icon-TWITER"></i>
+            </a>
+            <a href="https://www.facebook.com/Sp2511.super.code/">
+                <i title="facebook" style="color: #1349f8;" class="icon-FACEBOOK"></i>
+            </a>
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
